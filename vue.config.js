@@ -3,6 +3,7 @@ module.exports = {
         ? '/happy_calc/'
         : '/'
     ,
+    outputDir: 'docs',
     pages: {
         index: {
           // entry for the page
