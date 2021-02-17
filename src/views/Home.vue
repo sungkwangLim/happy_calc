@@ -113,7 +113,6 @@ export default {
       enter : function(){
           console.log('a');
       },
-      
   }
 }
 </script>

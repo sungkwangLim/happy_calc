@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Todo from '../views/Todo.vue'
+import Area from '../views/Area.vue'
+import Gsap from '../views/Gsap.vue'
 
 const routes = [
   {
@@ -7,6 +10,7 @@ const routes = [
     name: 'Home',
     component: Home
   },
+
   {
     path: '/about',
     name: 'About',
@@ -14,7 +18,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  {
+    path: '/todo',
+    name: 'Todo',
+    component: Todo
+  },
+  {
+    path: '/area',
+    name: 'Area',
+    component: Area
+  },
+  {
+    path: '/gsap',
+    name: 'Gsap',
+    component: Gsap
+  },
 ]
 
 const router = createRouter({
@@ -23,3 +42,4 @@ const router = createRouter({
 })
 
 export default router
+
