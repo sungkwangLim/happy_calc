@@ -7,7 +7,17 @@
   <router-view/>
   
 </template>
-
+<script>
+export default {
+  setup(){
+        if (sessionStorage.redirect) {
+            const redirect = sessionStorage.redirect
+            delete sessionStorage.redirect
+            this.$router.push(redirect);
+          }
+    }
+}
+</script>
 <style>
  * {margin: 0; padding: 0; box-sizing: border-box; }
   #app {max-width:920px; margin: 0 auto; width: 100%; padding: 15px;}

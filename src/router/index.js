@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Todo from '../views/Todo.vue'
 import Area from '../views/Area.vue'
 import Gsap from '../views/Gsap.vue'
+import limit from '../views/limit.vue'
 
 const routes = [
   {
@@ -33,6 +34,11 @@ const routes = [
     path: '/gsap',
     name: 'Gsap',
     component: Gsap
+  },
+  {
+    path: '/limit',
+    name: 'limit',
+    component: limit
   },
 ]
 
